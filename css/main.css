@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Pacifico-R";
+    src: url("../webfonts/Pacifico-Regular.ttf");
+}
+@font-face {
+    font-family: "Righteous-R";
+    src: url("../webfonts/Righteous-Regular.ttf");
+}
+@font-face {
+    font-family: "PTSansCaption-R";
+    src: url("../webfonts/PTSansCaption-Regular.ttf");
+}
+@font-face {
+    font-family: "PTSansCaption-B";
+    src: url("../webfonts/PTSansCaption-Bold.ttf");
+}
+@font-face {
+    font-family: "BreeSerif-R";
+    src: url(../webfonts/BreeSerif-Regular.ttf);
+}
+
+h2{
+    font-family: "Righteous-R";
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 70px;
+}
+
+p,
+span{
+    font-family: "PTSansCaption-R";
+}
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "pacifico-R";
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #352e28;
+    position: relative;
+    /* display: inline-block; */
+    
+    /* margin: auto; */
+}
+h1::after{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 25%;
+    background-color: #fec260;
+    left: 35%;
+    top: 70%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+h1:hover:after{ 
+    height: 100%;
+    top: 0%;
+    
+    
+ }
+
+
+
+.brd{
+    border-bottom: 2px dotted #352E28;
+}
+label{
+    font-family: "PTSansCaption-B";
+}
+input{
+    display: block;
+    font-family:  "PTSansCaption-R";
+    border-radius: 6px;
+}
+button{
+    background-color: #d1512d;
+    font-family:  "PTSansCaption-R";
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: #BB4120;
+}
+.form-control{
+    border: 1px solid #ced4da;
+}
+.form-control:focus{
+    border-color:#d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;;
+}
+
+.btn-visit{
+    background-color: #9eb23b;
+    transition: all 0.5s;
+}
+.btn-visit:hover{
+    background-color: #8a9e23;
+}
+
+.alert .top .circles span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.alert .top .circles span.one{
+    background-color: #F15F5D;
+}
+
+.alert .top .circles span.two{
+    background-color: #FEBE2E;
+}
+.alert .top .circles span.three{
+    background-color: #4DB748;
+}
+
+h5{
+    font-family: "BreeSerif-R";
+    font-size:21px;
+}
+
+.alert p i{
+    color: #BB4120;
+}
+.alert{
+    position: absolute;
+    transform: translate(-50%,-90%);
+    left: 50%;
+    top:90%;
+    
+    
+}
+/* .parent{
+    height: 100vh;
+    width:100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+} */
+
+
+@media screen and (max-width: 768px) {
+    h1::after{
+        width: 40%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    h1::after{
+        width: 20%;
+        left: 40%;
+        
+    }
+}

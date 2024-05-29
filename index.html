@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="you can save here your fav sites or sites you visit it more">
+    <title>Book Mark</title>
+    <link rel="shortcut icon" href="./imgs/bookmarker.jpg" type="./imgs/bookmarker.jpg">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1 class="text-center my-5   ">bookmarker</h1>
+    
+    <div class="container">
+        <div class="brd my-3"></div>
+            <h2 class="text-center p-3" >
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+        <div class="inputs">
+            <label for="site" class="py-2">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                 Site Name
+                
+                </label >
+                <input oninput="validationName()" id="site" type="text" class="form-control mb-3 " placeholder="Bookmark Name">
+    
+                <label for="thelink"  class="py-2">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input oninput="validationLink()" id="thelink" type="email" class="form-control" placeholder="Website URL">
+
+                
+                <div class="text-center my-3">
+                    <button id="submit" class=" border-0 text-white py-2 px-5 rounded-2">Submit</button>
+                </div>  
+                
+                
+                <!-- alert msg -->
+                    
+                    <div  id="alertMsg" class=" d-none w-50 alert bg-light  px-3 ">
+                        <div class="top d-flex justify-content-between my-2 ">
+                            <div class="circles">
+                            <span class="rounded-circle one me-1"></span>
+                            <span class="rounded-circle two  me-1"></span>
+                            <span class="rounded-circle three"></span>
+                            </div>
+                            <button class="btn" id="btnClose">
+                                <i class="fa-solid fa-xmark close fs-3"></i>
+                            </button>
+                            
+                        </div>
+                        <h5 class="mb-3" >Site Name or Url is not valid, Please follow the rules below :</h5>
+                        <p class=>
+                            <i class="fa-regular fa-circle-right p-2"></i>
+                            Site name must contain at least 3 characters
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-circle-right p-2"></i>
+                            Site URL must be a valid one
+                        </p>
+                    </div>
+                
+                
+                <!-- alert msg -->
+        </div>
+        <div class="brd my-3"></div>
+        <div class="row">
+            <table class="table text-center" id="collectData">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="showData">
+               
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="./js/all.min.css"></script> -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
